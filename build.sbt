@@ -4,7 +4,7 @@ organization := "com.peak6"
 
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.10.6"
 
 scalacOptions ++= Vector("-unchecked", "-deprecation", "-Ywarn-all")
 
@@ -19,6 +19,7 @@ libraryDependencies <++= (scalaVersion) {
 	"org.clapper" %% "grizzled-slf4j" % "1.0.2",
 	"org.slf4j" % "slf4j-simple" % "1.6.4",
 	"org.bouncycastle" % "bcprov-jdk16" % "1.46",
-	"org.apache.sshd" % "sshd-core" % "0.14.0"
+	"org.apache.sshd" % "sshd-core" % "1.1.0"
 	)}
 
+enablePlugins(JavaAppPackaging)
